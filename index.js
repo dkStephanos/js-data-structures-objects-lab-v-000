@@ -7,5 +7,6 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
 }
 
 function updateDriverWithKeyAndValue(driver, key, value) {
-  return Object.assign({}, driver, [key]:value)
+  const copy = Object.assign({}, driver, [key]:value)
+  return copy
 }
