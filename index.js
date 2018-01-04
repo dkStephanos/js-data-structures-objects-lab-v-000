@@ -3,6 +3,7 @@ driver = {}
 
 function updateDriverWithKeyAndValue(driver, key, value) {
   let copy = Object.assign({}, driver, {[key]: value})
+  return copy
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
